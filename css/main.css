@@ -11,7 +11,84 @@
 	--bg-color: #101113;
 	--text-color: #fff;
 	--main-color: #34e7f8;
-	--ohter: #fcfcfc;
+	--ohter-color: #fcfcfc;
 	--h1-font: 6rem;
 	--p-font: 1rem;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 8%;
+	transition: all .55s ease;
+	background-color: transparent;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	color: var(--text-color);
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.logo i {
+	color: var(--main-color);
+	font-size: 32px;
+	margin-right: 5px;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar a {
+	color: var(--ohter-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	margin: 0 30px;
+	transition: all .55s ease;
+}
+
+.navbar a:hover {
+	color: var(--main-color);
+}
+
+.navbar a.active {
+	color: var(--main-color);
+}
+
+.header-icons {
+	display: flex;
+	align-items: center;
+}
+
+#menu-icon {
+	font-size: 35px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+}
+
+.header-icons i {
+	margin-right: 25px;
+	font-size: 28px;
+	cursor: pointer;
+	transition: all .55s ease;
+}
+
+.header-icons i:hover {
+	transform: translateY(-5px);
+	color: var(--main-color);
 }
