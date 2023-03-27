@@ -147,3 +147,45 @@ section {
 .home-img img {
 	max-width: 100%;
 }
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.main li img {
+	width: 60px;
+	height: auto;
+	max-width: 100%;
+}
+
+.row {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main-color);
+	transition: all .55s ease;
+	cursor: pointer;
+}
+
+.row:hover {
+	transform: translateY(-8px);
+}
+
+.row2 {
+	background-color: #ff758d;
+}
+
+.row3 {
+	background-color: #ffd06d;
+}
