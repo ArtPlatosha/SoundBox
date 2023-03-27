@@ -306,7 +306,7 @@ section {
 	.navbar {
 		position: absolute;
 		top: 100%;
-		right: -200%;
+		right: -200px;
 		width: 200px;
 		height: 20vh;
 		background-color: var(--main-color);
