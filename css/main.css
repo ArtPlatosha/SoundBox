@@ -189,3 +189,25 @@ section {
 .row3 {
 	background-color: #ffd06d;
 }
+
+.bottom {
+	position: absolute;
+	bottom: 35px;
+	right: 8%;
+	display: flex;
+	align-items: center;
+	color: var(--text-color);
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.bottom i {
+	color: var(--main-color);
+	font-size: 25px;
+	margin-left: 15px;
+	transition: all .55s ease;
+}
+
+.bottom i:hover {
+	transform: translateY(-8px);
+}
